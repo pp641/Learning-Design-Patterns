@@ -30,7 +30,7 @@ class NotificationFactory {
 }
 
 // Client code for Factory Pattern
-const notificationType = "email"; // Change to "sms" for testing SMS notification
-const notification = NotificationFactory.createNotification(notificationType);
-notification.notify("This is a factory pattern example.");
+const notificationTypes = "email"; // Change to "sms" for testing SMS notification
+const notifications = NotificationFactory.createNotification(notificationType);
+notifications.notify("This is a factory pattern example.");
 // Output: Email Notification: This is a factory pattern example.
